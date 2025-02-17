@@ -2,8 +2,8 @@ import axios from 'axios';
 import './Home.scss';
 import { FaGithub, FaReact, FaYoutube } from "react-icons/fa";
 import { SiSass, SiAxios } from "react-icons/si";
-
 import { useEffect, useState } from 'react';
+
 const Home = () => {
     const [paises, setPaises] = useState([]);
     const [provincias, setProvincias] = useState([]);
@@ -89,11 +89,11 @@ const Home = () => {
                     <a target='_blank' href='https://axios-http.com/ptbr/docs/intro'>
                         <SiAxios />
                     </a>
-                    <a target='_blank' href='https://www.youtube.com/@lenilsonlima712'>
-                        <FaYoutube />
-                    </a>
                     <a target='_blank' href='https://sass-lang.com/'>
                         <SiSass />
+                    </a>
+                    <a target='_blank' href='https://www.youtube.com/@lenilsonlima712'>
+                        <FaYoutube />
                     </a>
                 </div>
             </div>
