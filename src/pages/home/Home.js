@@ -80,7 +80,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='card-1 footer'>
-                    <a target='_blank' href=''>
+                    <a target='_blank' href='https://github.com/LenilsonLimaPantoja/covid-19.git'>
                         <FaGithub />
                     </a>
                     <a target='_blank' href='https://react.dev/'>
