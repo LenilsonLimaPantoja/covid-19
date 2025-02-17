@@ -1,0 +1,143 @@
+.container-home {
+    background-image: url('../../assets/covid.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-height: 100vh;
+
+    .area-home {
+        flex-grow: 1;
+        display: flex;
+        max-width: 1000px;
+        flex-direction: column;
+        row-gap: 20px;
+        overflow: scroll;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        height: auto;
+        padding: 20px;
+
+        .card-1 {
+            background: rgba(3, 2, 2, 0.3);
+            backdrop-filter: blur(15px);
+            border-radius: 5px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+
+            line-height: normal;
+            text-align: center;
+
+            h1 {
+                color: #fff;
+            }
+
+            div {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 10px;
+                flex-wrap: wrap;
+                row-gap: 20px;
+
+                select {
+                    flex-grow: 1;
+                    flex-basis: 0;
+                    outline: none;
+                    background: rgba(8, 8, 8, 0.3);
+                    backdrop-filter: blur(10px);
+                    border: none;
+                    color: #fff;
+                    padding: 10px;
+                    min-width: 400px;
+                }
+            }
+
+
+        }
+
+        .footer {
+            flex-direction: row;
+            column-gap: 20px;
+            flex-wrap: wrap;
+
+            a {
+                flex-grow: 1;
+                background: rgba(8, 8, 8, 0.3);
+                backdrop-filter: blur(10px);
+                height: 60px;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-width: 150px;
+                max-width: 380px;
+
+                svg {
+                    font-size: 30px;
+                    color: #fff;
+                }
+            }
+        }
+
+        .body-cards {
+            display: flex;
+            row-gap: 20px;
+            column-gap: 20px;
+            width: 100%;
+            flex-wrap: wrap;
+
+            .card {
+                background: rgba(3, 2, 2, 0.3);
+                backdrop-filter: blur(15px);
+                padding: 30px;
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                border-radius: 5px;
+                min-width: 400px;
+                flex-basis: 0;
+                color: #fff;
+
+                span {
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+
+                .span-1 {
+                    font-size: 25px;
+
+                    .loading {
+                        width: 23px;
+                        height: 23px;
+                        border: solid 5px #fff;
+                        border-left: solid 5px transparent;
+                        border-radius: 50%;
+                        animation-name: loading;
+                        animation-duration: .5s;
+                        animation-fill-mode: forwards;
+                        animation-timing-function: linear;
+                    }
+
+                    @keyframes loading {
+                        100% {
+                            transform: rotate(360deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
